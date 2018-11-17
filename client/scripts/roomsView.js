@@ -4,19 +4,16 @@ var RoomsView = {
   $select: $('#rooms select'),
 
   initialize: function() {
-   // console.log($('Messages.results'));
-    /*$('#message').results.forEach(function(message) {
-      console.log(message.roomname);
-      RoomsView.render(message.roomname);
-    });*/
-    
+    RoomsView.$button.on('click', function() {
+      RoomsView.renderRoom($('#message').val());
+    });
   },
 
   render: function() {
   },
 
   renderRoom: function(room) {
-    this.$select.append(`<div>${room}</div>`);
+    RoomsView.$select.append(`<option value="${room}">${room}</option>`);
   }
 
 };
