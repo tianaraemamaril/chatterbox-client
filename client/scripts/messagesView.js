@@ -3,7 +3,6 @@ var MessagesView = {
   $chats: $('#chats'), // found in index.html, line 38
 
   initialize: function() {
-    
   },
 
   render: function() {
