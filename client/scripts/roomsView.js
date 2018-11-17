@@ -14,7 +14,10 @@ var RoomsView = {
   },
 
   renderRoom: function(room) {
-    RoomsView.$select.append(`<option value="${room}">${room}</option>`);
+    if ($(`#rooms select option[value="${room}"]`).length === 0) {
+       RoomsView.$select.append(`<option value="${room}">${room}</option>`);
+    }
+   
   }
 
 };
