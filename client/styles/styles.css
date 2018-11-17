@@ -70,7 +70,7 @@ form input[type=text] {
 }
 
 .chat:hover {
-    background-color: #ddd;
+    background-color: pink;
 }
 
 .spinner {

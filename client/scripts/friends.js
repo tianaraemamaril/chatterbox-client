@@ -1,5 +1,6 @@
 var Friends = {
-  toggleStatus: function() {
-    return true;    
+//  friendsList: [],
+  toggleStatus: function(username) {
+    return true;   
   }
 };

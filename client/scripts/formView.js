@@ -15,6 +15,7 @@ var FormView = {
       roomname: $('#rooms select option:selected').text()
     };
     Parse.create(message, console.log('Message submitted!'));
+    MessagesView.renderMessage(message);
   },
 
   setStatus: function(active) {
